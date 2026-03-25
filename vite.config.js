@@ -7,12 +7,12 @@ import { fileURLToPath } from "url"
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
+  base: "/blessednice-portfolio/", // ✅ VERY IMPORTANT for GitHub Pages
+
   plugins: [
     react(),
     tailwindcss(),
   ],
-
-  base: "/blessednice-digital-portfolio/", // ✅ FIXED
 
   resolve: {
     alias: {
